@@ -12,9 +12,9 @@ int main() {
       list_push(int_list, &i);
     }
 
+    list_push(int_list, &(int){10});
     list_push(int_list, &(int){13});
     list_push(int_list, &(int){50});
-    list_push(int_list, &(int){15});
 
 
     // Print elements
@@ -25,6 +25,9 @@ int main() {
         printf("%d ", value);
     }
     printf("\n");
+
+    // Get the size of the list
+    printf("Size of the list: %zu\n", list_size(int_list));
 
 
     // Pop an element
